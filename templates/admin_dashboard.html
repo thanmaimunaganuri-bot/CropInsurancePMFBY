@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
@@ -260,7 +259,7 @@ transform:scale(1.05);
 
 <div class="stats">
 
-<h2>38</h2>
+<h2>15</h2>
 
 <p>Disease Classes</p>
 
@@ -272,7 +271,7 @@ transform:scale(1.05);
 
 <div class="stats">
 
-<h2>5400+</h2>
+<h2>16000+</h2>
 
 <p>Training Images</p>
 
@@ -284,9 +283,9 @@ transform:scale(1.05);
 
 <div class="stats">
 
-<h2>CNN</h2>
+<h2>ResNet50</h2>
 
-<p>Model Loaded</p>
+<p>AI Model</p>
 
 </div>
 
@@ -296,7 +295,7 @@ transform:scale(1.05);
 
 <div class="stats">
 
-<h2>Users</h2>
+<h2>{{ total_users }}</h2>
 
 <p>Registered Farmers</p>
 
@@ -306,193 +305,84 @@ transform:scale(1.05);
 
 </div>
 
-<div class="row g-4">
 
-<div class="col-md-4">
 
-<div class="card-box">
-
-<div class="icon">
-
-<i class="fa-solid fa-upload"></i>
-
-</div>
-
-<div class="title">
-
-Upload Train Dataset
-
-</div>
-
-<a href="/upload_train">
-
-<button class="btn-custom">
-
-Open
-
-</button>
-
-</a>
-
-</div>
-
-</div>
-
-<div class="col-md-4">
-
-<div class="card-box">
-
-<div class="icon">
-
-<i class="fa-solid fa-folder-open"></i>
-
-</div>
-
-<div class="title">
-
-Upload Test Dataset
-
-</div>
-
-<a href="/upload_test">
-
-<button class="btn-custom">
-
-Open
-
-</button>
-
-</a>
-
-</div>
-
-</div>
-
-<div class="col-md-4">
-
-<div class="card-box">
-
-<div class="icon">
-
-<i class="fa-solid fa-gears"></i>
-
-</div>
-
-<div class="title">
-
-Preprocess Dataset
-
-</div>
-
-<a href="/preprocess">
-
-<button class="btn-custom">
-
-Open
-
-</button>
-
-</a>
-
-</div>
-
-</div>
-
-</div>
 
 <br>
 
 <div class="row g-4">
 
-<div class="col-md-4">
+    <!-- Visualizations -->
 
-<div class="card-box">
+    <div class="col-md-4">
 
-<div class="icon">
+        <div class="card-box">
 
-<i class="fa-solid fa-chart-line"></i>
+            <div class="icon">
+                <i class="fa-solid fa-chart-line"></i>
+            </div>
 
-</div>
+            <div class="title">
+                Visualizations
+            </div>
 
-<div class="title">
+            <a href="/visualizations">
+                <button class="btn-custom">
+                    Open
+                </button>
+            </a>
 
-Visualizations
+        </div>
 
-</div>
+    </div>
 
-<a href="/visualizations">
+    <!-- Registered Users -->
 
-<button class="btn-custom">
+    <div class="col-md-4">
 
-Open
+        <div class="card-box">
 
-</button>
+            <div class="icon">
+                <i class="fa-solid fa-users"></i>
+            </div>
 
-</a>
+            <div class="title">
+                Registered Users
+            </div>
 
-</div>
+            <a href="/users">
+                <button class="btn-custom">
+                    Open
+                </button>
+            </a>
 
-</div>
+        </div>
 
-<div class="col-md-4">
+    </div>
 
-<div class="card-box">
+    <!-- Prediction History -->
 
-<div class="icon">
+    <div class="col-md-4">
 
-<i class="fa-solid fa-brain"></i>
+        <div class="card-box">
 
-</div>
+            <div class="icon">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+            </div>
 
-<div class="title">
+            <div class="title">
+                Prediction History
+            </div>
 
-Train CNN
+            <a href="/history">
+                <button class="btn-custom">
+                    Open
+                </button>
+            </a>
 
-</div>
+        </div>
 
-<a href="/train_cnn">
-
-<button class="btn-custom">
-
-Open
-
-</button>
-
-</a>
-
-</div>
-
-</div>
-
-<div class="col-md-4">
-
-<div class="card-box">
-
-<div class="icon">
-
-<i class="fa-solid fa-users"></i>
-
-</div>
-
-<div class="title">
-
-Registered Users
-
-</div>
-
-<a href="/users">
-
-<button class="btn-custom">
-
-Open
-
-</button>
-
-</a>
-
-</div>
-
-</div>
+    </div>
 
 </div>
 
@@ -516,4 +406,4 @@ Logout
 
 </body>
 
-</html>
+</html> 
