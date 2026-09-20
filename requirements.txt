@@ -7,3 +7,4 @@ matplotlib
 seaborn
 pillow
 scikit-learn
+gunicorn
